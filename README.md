@@ -12,6 +12,10 @@
 ```
 $git clone https://github.com/n0tx/kodingnext-advancedteacher-backend.git
 ```
+- Create MySQL database
+```
+MySQL> create database db_login;
+```
 
 - Import preinitialize data
 ```
@@ -35,7 +39,7 @@ $php -S localhost:8080
 
 ## check the database and table
 
-![image](https://github.com/user-attachments/assets/5fae839e-bf5c-461a-a39a-fdf499339af4)
+![image](https://github.com/user-attachments/assets/99084a85-afbc-4e34-8fe2-3ca5e6df6b05)
 
 
 ## Test Login for Admin Role 
@@ -49,6 +53,12 @@ $php -S localhost:8080
 ![image](https://github.com/user-attachments/assets/985319e0-c8ec-4eb2-9232-71aefcc729f8)
 
 ![image](https://github.com/user-attachments/assets/0dd8692f-c35a-4b10-8e31-191bf325ec54)
+
+
+## Register New User
+
+![image](https://github.com/user-attachments/assets/4525f7e4-76d0-4f68-8901-5f53dcede6f8)
+
 
 
 
