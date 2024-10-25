@@ -32,15 +32,15 @@ CREATE TABLE `tb_user` (
   `user` varchar(255) NOT NULL,
   `pass` varchar(255) NOT NULL,
   `role` enum('admin','user') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tb_user`
 --
 
 INSERT INTO `tb_user` (`id_user`, `user`, `pass`, `role`) VALUES
-(1, 'qibar', 'qibar', 'user'),
-(2, 'sneakers', 'sneakers', 'admin');
+(1, 'riki', 'riki', 'user'),
+(2, 'admin', 'admin', 'admin');
 
 --
 -- Indexes for dumped tables

@@ -1,3 +1,3 @@
 <?php
-$host = mysqli_connect("localhost","root",null,"db_login");
+$host = mysqli_connect("localhost","root","root","db_login");
 ?>
