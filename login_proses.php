@@ -4,27 +4,20 @@ include ('config.php');
 $user = $_POST['user'];
 $pass = $_POST['pass'];
 
-// were check is there same from database and form
-$login = mysqli_query($host,"SELECT * FROM tb_user where user='$user' AND pass='$pass'");
+// Cek apakah username ada di database
+$login = mysqli_query($host,"SELECT * FROM tb_user WHERE user='$user'");
+$data = mysqli_fetch_assoc($login);
 
-$check = mysqli_num_rows($login);
-
-// check there is data or not 
-if ($check > 0) {
-    $data = mysqli_fetch_assoc($login);
-    // check for role
-    // if user is admin, throw in admin folder
-    if($data['role']=="admin"){
+// Verifikasi password yang di-hash
+if ($data && password_verify($pass, $data['pass'])) {
+    // Cek peran pengguna
+    if ($data['role'] == "admin") {
         header("location:admin/index.php");
-    }elseif($data['role']=="user")
-    // if user is user throw in user folder
+    } elseif ($data['role'] == "user") {
         header("location:user/index.php");
-}else{
-    // if not there data same from database and form your out!
+    }
+} else {
+    // Gagal login
     header("location:index.php?message=failed");
 }
-
-
-
-
 ?>

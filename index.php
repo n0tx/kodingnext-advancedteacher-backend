@@ -7,6 +7,16 @@
 </head>
 <body>
     <h1>Login for account</h1>
+    <?php
+        // Periksa apakah ada parameter 'message' di URL
+        if (isset($_GET['message'])) {
+            $message = $_GET['message'];
+            // Menampilkan pesan sesuai dengan nilai 'message'
+            if ($message == "failed") {
+                echo "<p style='color: red;'>Login failed. Please try again.</p>";
+            }
+        }
+    ?>
     <form method="post" action="login_proses.php">
         <div>
             <label>username</label>
@@ -18,6 +28,10 @@
         </div>
         <div>
             <button type="submit">Login</button>
+        </div>
+        <!-- Link to the register form -->
+        <div>
+            <p>Don't have an account? <a href="form_register.php">Register here</a></p>
         </div>
     </form>
 </body>
