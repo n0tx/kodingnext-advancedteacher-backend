@@ -39,8 +39,8 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`id_user`, `user`, `pass`, `role`) VALUES
-(1, 'riki', 'riki', 'user'),
-(2, 'admin', 'admin', 'admin');
+(1, 'riki', '$2y$10$nLOmtkGDzQcfjA.BdGh3FO977Em/GnPgxVjTLQ.85xPkOJD.XBzr.', 'user'),
+(2, 'admin', '$2y$10$zMsdElTBbhTF8ojwAhRyuOUptDWczNcMLvTcegps5E5gyrJ6RgBJ.', 'admin');
 
 --
 -- Indexes for dumped tables
