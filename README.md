@@ -45,19 +45,28 @@ $php -S localhost:8080
 ## Test Login for Admin Role 
 ![image](https://github.com/user-attachments/assets/2d583197-a2ae-417e-b545-70df542cbac0)
 
-![image](https://github.com/user-attachments/assets/42c88cb3-b1e9-4650-98c8-d3f064eccac8)
+![image](https://github.com/user-attachments/assets/1610fa4b-d970-4a4d-b57e-31eeb2e281fc)
+
 
 
 ## Test Login for User Role
 
 ![image](https://github.com/user-attachments/assets/985319e0-c8ec-4eb2-9232-71aefcc729f8)
 
-![image](https://github.com/user-attachments/assets/0dd8692f-c35a-4b10-8e31-191bf325ec54)
+![image](https://github.com/user-attachments/assets/6ce9d61a-c0d4-410f-b49c-948dfb9b0392)
+
 
 
 ## Register New User
 
 ![image](https://github.com/user-attachments/assets/4525f7e4-76d0-4f68-8901-5f53dcede6f8)
+
+## User Logout
+
+![image](https://github.com/user-attachments/assets/1610fa4b-d970-4a4d-b57e-31eeb2e281fc)
+
+![image](https://github.com/user-attachments/assets/bc673a05-8c0c-46f3-b5f1-311b5369e28d)
+
 
 
 
