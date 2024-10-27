@@ -63,7 +63,8 @@ $php -S localhost:8080
 
 ## User Logout
 
-![image](https://github.com/user-attachments/assets/1610fa4b-d970-4a4d-b57e-31eeb2e281fc)
+![image](https://github.com/user-attachments/assets/fac42e74-e5d1-47f7-aa42-c75bc8c59b13)
+
 
 ![image](https://github.com/user-attachments/assets/bc673a05-8c0c-46f3-b5f1-311b5369e28d)
 
