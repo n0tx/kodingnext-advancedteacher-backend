@@ -1,4 +1,5 @@
 <?php
+session_start();
 include ('config.php');
 
 $user = $_POST['user'];
@@ -10,6 +11,9 @@ $data = mysqli_fetch_assoc($login);
 
 // Verifikasi password yang di-hash
 if ($data && password_verify($pass, $data['pass'])) {
+    // Menyimpan nama pengguna ke dalam session setelah login berhasil
+    $_SESSION['username'] = $data['user'];
+    
     // Cek peran pengguna
     if ($data['role'] == "admin") {
         header("location:admin/index.php");

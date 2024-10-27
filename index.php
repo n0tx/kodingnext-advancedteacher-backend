@@ -15,6 +15,9 @@
             if ($message == "failed") {
                 echo "<p style='color: red;'>Login failed. Please try again.</p>";
             }
+            if ($message = "logged_out") {
+                echo "<p style='color: green;'>You have been logged out successfully.</p>";
+            }
         }
     ?>
     <form method="post" action="login_proses.php">

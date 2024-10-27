@@ -6,6 +6,22 @@
     <title>Admin Page</title>
 </head>
 <body>
-    <h1>Welcome admin!</h1>
+<?php
+session_start();
+
+// Cek apakah pengguna sudah login
+if (!isset($_SESSION['username'])) {
+    // Jika belum login, redirect ke halaman login
+    header("location:index.php");
+    exit();
+}
+
+// Mengambil nama pengguna dari session
+$username = $_SESSION['username'];
+?>
+    <h2>Admistrator Page</h2>
+    <h1>Welcome <?php echo htmlspecialchars($username); ?>!</h1>
+    <!-- Tombol Logout -->
+    <a href="../logout.php">Logout</a>
 </body>
 </html>
